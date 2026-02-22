@@ -39,6 +39,22 @@
             <label for="duration-slider">Set Duration: <span id="duration-value">25</span> min</label>
             <input type="range" id="duration-slider" min="5" max="60" step="5" value="25">
         </div>
+
+        <div class="contact-section">
+            <h3>Affiliate Inquiry</h3>
+            <form action="https://formspree.io/f/xgolnnzy" method="POST" id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="How can we help?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </div>
     <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
     <script src="main.js"></script>

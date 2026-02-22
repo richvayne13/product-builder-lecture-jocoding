@@ -23,16 +23,18 @@ A modern, web-based Pomodoro timer designed to help users manage their work and 
 - **Fixed 60-Min Scale:** The circle always represents 60 minutes, so setting 30 minutes fills exactly half the circle.
 - **Controls:** Start, Pause, and Reset functionality.
 - **Customization:** Theme toggle and primary color customization.
+- **Affiliate Inquiry Form:** A contact form powered by Formspree for partnership requests.
 - **Alarm:** Audible alert when the timer ends.
 
 ## Current State
 
 - **Implemented:** 
     - Core countdown logic and 60-tick SVG visualization.
-    - **Fixed 60-minute circular scale.**
-    - **Duration slider (5-60m, 5m steps).**
+    - Fixed 60-minute circular scale.
+    - Duration slider (5-60m, 5m steps).
     - Depleting progress bar animation.
     - Dark/Light Mode with persistence.
+    - **Affiliate Inquiry Form integration (Formspree).**
     - Responsive styling and audio alerts.
 
 ## Next Steps
