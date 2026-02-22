@@ -242,6 +242,12 @@ body {
     opacity: 0.9;
 }
 
+.comments-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
 .mode-btn {
     background: none;
     border: 1px solid var(--border-color);

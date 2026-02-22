@@ -24,6 +24,7 @@ A modern, web-based Pomodoro timer designed to help users manage their work and 
 - **Controls:** Start, Pause, and Reset functionality.
 - **Customization:** Theme toggle and primary color customization.
 - **Affiliate Inquiry Form:** A contact form powered by Formspree for partnership requests.
+- **Comments Section:** Integrated Disqus comments for user interaction.
 - **Alarm:** Audible alert when the timer ends.
 
 ## Current State
@@ -34,7 +35,8 @@ A modern, web-based Pomodoro timer designed to help users manage their work and 
     - Duration slider (5-60m, 5m steps).
     - Depleting progress bar animation.
     - Dark/Light Mode with persistence.
-    - **Affiliate Inquiry Form integration (Formspree).**
+    - Affiliate Inquiry Form integration (Formspree).
+    - **Disqus comments integration.**
     - Responsive styling and audio alerts.
 
 ## Next Steps
