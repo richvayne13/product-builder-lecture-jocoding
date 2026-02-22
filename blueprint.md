@@ -2,7 +2,7 @@
 
 ## Overview
 
-A modern, web-based Pomodoro timer designed to help users manage their work and break intervals. The timer is visually represented as a circular progress bar with tick marks for each minute. Users can customize the timer color, switch between different timer modes (Pomodoro, Short Break, Long Break), toggle between dark and light themes, and receive an audible alarm when a session ends.
+A modern, web-based Pomodoro timer designed to help users manage their work and break intervals. The timer features a circular progress bar fixed to a 60-minute scale, allowing users to select custom durations in 5-minute increments.
 
 ## Project Outline
 
@@ -10,41 +10,32 @@ A modern, web-based Pomodoro timer designed to help users manage their work and 
 - **Layout:** A clean, centered, and modern layout featuring the circular timer as the main focus.
 - **Color Palette:** 
     - **Primary Color:** Customizable via a color picker (default: tomato red).
-    - **Themes:** Supports both **Light** and **Dark** modes with modern, high-contrast colors and subtle shadows.
-- **Typography:** Expressive, expressive and relevant typography with stressed font sizes for ease of understanding.
+    - **Themes:** Supports both **Light** and **Dark** modes with modern, high-contrast colors.
 - **Visuals:**
-    - A circular timer with a progress bar that animates as time elapses.
-    - 60 tick marks around the circle to visually represent minutes.
-    - Polished UI with smooth transitions and depth-enhancing shadows.
-- **Responsiveness:** Fully mobile-responsive layout that adapts to different screen sizes.
+    - A circular timer with 60 tick marks, representing a full hour.
+    - The progress bar fills based on the selected duration relative to 60 minutes.
+    - As time elapses, the progress bar "depletes" until it disappears at 0.
+- **Responsiveness:** Fully mobile-responsive layout.
 
 ### Features
-- **Timer Modes:**
-    - Pomodoro: 25 minutes.
-    - Short Break: 5 minutes.
-    - Long Break: 15 minutes.
-- **Controls:**
-    - Start: Begins the countdown.
-    - Pause: Pauses the countdown.
-    - Reset: Resets the timer to the current mode's default time.
-- **Customization:**
-    - **Primary Color Picker:** Dynamically change the timer's theme color.
-    - **Theme Toggle:** Switch between Light and Dark modes with persistent storage in `localStorage`.
-- **Alarm:**
-    - An audible alarm sounds when the timer reaches zero.
+- **Timer Modes:** Quick presets for Pomodoro (25m), Short Break (5m), and Long Break (15m).
+- **Custom Duration:** A range slider to set time from 5 to 60 minutes in 5-minute steps.
+- **Fixed 60-Min Scale:** The circle always represents 60 minutes, so setting 30 minutes fills exactly half the circle.
+- **Controls:** Start, Pause, and Reset functionality.
+- **Customization:** Theme toggle and primary color customization.
+- **Alarm:** Audible alert when the timer ends.
 
 ## Current State
 
 - **Implemented:** 
-    - Core Pomodoro logic and circular timer visualization.
-    - Mode switching (Pomodoro, Short Break, Long Break).
-    - Primary color customization via color picker.
-    - **Dark/Light Mode** support with persistence.
-    - Modern, responsive styling.
-    - Audio alert on timer completion.
+    - Core countdown logic and 60-tick SVG visualization.
+    - **Fixed 60-minute circular scale.**
+    - **Duration slider (5-60m, 5m steps).**
+    - Depleting progress bar animation.
+    - Dark/Light Mode with persistence.
+    - Responsive styling and audio alerts.
 
 ## Next Steps
 
-- Add a task list to track what to work on during Pomodoro sessions.
-- Implement custom duration settings for each mode.
-- Add keyboard shortcuts for timer controls.
+- Add a task list to track what to work on during sessions.
+- Add keyboard shortcuts.

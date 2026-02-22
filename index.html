@@ -35,6 +35,10 @@
             <button class="mode-btn" data-time="300">Short Break</button>
             <button class="mode-btn" data-time="900">Long Break</button>
         </div>
+        <div class="duration-control">
+            <label for="duration-slider">Set Duration: <span id="duration-value">25</span> min</label>
+            <input type="range" id="duration-slider" min="5" max="60" step="5" value="25">
+        </div>
     </div>
     <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
     <script src="main.js"></script>
